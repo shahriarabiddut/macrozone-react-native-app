@@ -441,9 +441,6 @@ const styles = StyleSheet.create({
 });
 ```
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 18. Update Home Screen With Header
 
 Now we can use the `HomeHeader` component in our `HomeScreen`. Open `src/app/(tabs)/index.tsx` and update to the following:
@@ -462,9 +459,7 @@ export default function HomeScreen() {
   );
 }
 ```
--->
 
-<!--
 ## 19. Meal List Screen
 
 Create a new file at `src/app/meals.tsx` and add the following code:
@@ -481,9 +476,7 @@ export default function MealsScreen() {
   );
 }
 ```
--->
 
-<!--
 ## 20. Add Screen to Stack
 
 Then, open `src/app/_layout.tsx` and add the new screen to the stack:
@@ -504,9 +497,7 @@ export default function RootLayout() {
   );
 }
 ```
--->
 
-<!--
 ## 21. Navigating Screens & Links
 
 To navigate between screens, we can use the `Link` component from `expo-router`. Open `src/app/index.tsx` and add a link to the meals screen:
@@ -531,9 +522,7 @@ export default function HomeScreen() {
 ```
 
 Now you can navigate to the meals screen.
--->
 
-<!--
 ## 22. Adding A Header To The Meals Screen
 
 To add a header to the meals screen, we can use the `Stack.Screen` options in the `_layout.tsx` file. Open `src/app/_layout.tsx` and update to the following:
@@ -556,7 +545,8 @@ export default function RootLayout() {
   );
 }
 ```
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 23. Add Meals Screen
