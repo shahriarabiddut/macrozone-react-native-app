@@ -265,9 +265,6 @@ export default function HomeScreen() {
 }
 ```
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 12. StyleSheet API
 
 For more complex styles, you can use the `StyleSheet` API to create a stylesheet object:
@@ -304,9 +301,7 @@ const styles = StyleSheet.create({
   },
 });
 ```
--->
 
-<!--
 ## 13. Changing Header Text
 
 To change the text of the header, you can use the `screenOptions` prop on the `Stack` component in the `_layout.tsx` file:
@@ -324,9 +319,7 @@ export default function RootLayout() {
   );
 }
 ```
--->
 
-<!--
 ## 14. Remove The Header
 
 If you want to remove the header entirely (which I do), you can set `headerShown` to `false` in the `screenOptions`:
@@ -338,7 +331,8 @@ export default function RootLayout() {
   return <Stack screenOptions={{ headerShown: false }} />;
 }
 ```
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 15. Global Styles
