@@ -26,8 +26,8 @@ How to track progress: each step below the current one is wrapped in its own `<!
 - [x] 7. [Remove The DevTools Icon](#7-remove-the-devtools-icon)
 - [x] 8. [Basic Home Screen](#8-basic-home-screen)
 - [x] 9. [Checking The Platform](#9-checking-the-platform)
-- [ ] 10. [Checking The Device Information](#10-checking-the-device-information) ← **current**
-- [ ] 11. Inline Styling
+- [x] 10. [Checking The Device Information](#10-checking-the-device-information)
+- [ ] 11. [Inline Styling](#11-inline-styling) ← **current**
 - [ ] 12. StyleSheet API
 - [ ] 13. Changing Header Text
 - [ ] 14. Remove The Header
@@ -228,8 +228,6 @@ export default function HomeScreen() {
 }
 ```
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
 ## 10. Checking The Device Information
 
 You can also check the device information using the `Device` module from Expo:
@@ -251,7 +249,6 @@ export default function HomeScreen() {
 }
 ```
 
-<!--
 ## 11. Inline Styling
 
 You can style your components using inline styles, which are just JavaScript objects that you pass to the `style` prop of a component:
@@ -267,7 +264,8 @@ export default function HomeScreen() {
   );
 }
 ```
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 12. StyleSheet API

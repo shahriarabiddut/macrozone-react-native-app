@@ -1,14 +1,16 @@
-import * as Device from "expo-device";
-import { Platform, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text>Welcome to Macrozone!</Text>
-      <Text>Running on: {Platform.OS}</Text>
-      <Text>Device Model: {Device.modelName}</Text>
-      <Text>Device Brand: {Device.brand}</Text>
-      <Text>OS Version: {Device.osVersion}</Text>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "cyan",
+      }}
+    >
+      <Text>Hello World</Text>
     </View>
   );
 }
