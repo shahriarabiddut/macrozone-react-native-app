@@ -332,9 +332,6 @@ export default function RootLayout() {
 }
 ```
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 15. Global Styles
 
 Create a file at `src/styles/global.ts` and add the following code to define some global styles and colors that we can use throughout the app:
@@ -382,9 +379,7 @@ export const globalStyles = StyleSheet.create({
   },
 });
 ```
--->
 
-<!--
 ## 16. Update Home Screen with Global Styles
 
 Now we can update our `HomeScreen` to use the global styles and colors we just defined. We will also change the root `View` to a `ScrollView` so that we can scroll the content if it exceeds the height of the screen. Open `src/app/(tabs)/index.tsx` and update to the following:
@@ -413,9 +408,7 @@ const styles = StyleSheet.create({
 ```
 
 We also are using the `<ScrollView>` now instead of the `<View>` component.
--->
 
-<!--
 ## 17. Home Header With Date
 
 Let's create a header component for the home screen that displays the current date. Create a component at `src/components/HomeHeader.tsx` with the following code:
@@ -447,7 +440,8 @@ const styles = StyleSheet.create({
   },
 });
 ```
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 18. Update Home Screen With Header
