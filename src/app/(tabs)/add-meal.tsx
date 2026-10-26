@@ -1,11 +1,10 @@
 import { globalStyles } from "@/styles/global";
-import { Text, ScrollView } from "react-native";
+import { ScrollView, Text } from "react-native";
 
 export default function MealsScreen() {
   return (
     <ScrollView style={globalStyles.container}>
-      <Text style={globalStyles.title}>All Meals</Text>
-      <Text style={globalStyles.sectionTitle}>All Meals 2</Text>
+      <Text style={globalStyles.title}>Add Meal</Text>
     </ScrollView>
   );
 }

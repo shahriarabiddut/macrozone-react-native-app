@@ -546,9 +546,6 @@ export default function RootLayout() {
 }
 ```
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 23. Add Meals Screen
 
 Let's create one more page/screen for adding meals. Create a new file at `src/app/add-meal.tsx` and add the following code:
@@ -587,9 +584,7 @@ export default function RootLayout() {
   );
 }
 ```
--->
 
-<!--
 ## 24. Add Link To Add Meal Screen
 
 Just to test it out, let's add a link to the add meal screen from the meals screen. Open `src/app/meals.tsx` and update to the following:
@@ -610,9 +605,7 @@ export default function MealsScreen() {
   );
 }
 ```
--->
 
-<!--
 ## 25. Tabs
 
 All this is well and good, but it would be nice to have a tab bar for navigating between the different screens instead of just links.
@@ -626,9 +619,7 @@ Move the following into the new `src/app/(tabs)` folder:
 - `index.tsx`
 - `meals.tsx`
 - `add-meal.tsx`
--->
 
-<!--
 ## 26. Create The Tab Layout
 
 We also need to create a new layout file for the tabs. Create a new file at `src/app/(tabs)/_layout.tsx` and add the following code:
@@ -684,9 +675,7 @@ export default function TabLayout() {
 ```
 
 This code sets up a tab navigator with three tabs: Home, Add Meal, and All Meals. Each tab has an icon from the Ionicons library.
--->
 
-<!--
 ## 27. Update The Root Layout
 
 Finally, we need to update the root layout to use the new tab layout. Open `src/app/_layout.tsx` and update to the following:
@@ -704,7 +693,8 @@ export default function RootLayout() {
 ```
 
 This tells the root layout to render the tab layout, which in turn renders the individual screens as tabs. We no longer need the top bar with the back button, so we set `headerShown` to `false` in the stack screen options.
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 28. Macro Card Component
