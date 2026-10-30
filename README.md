@@ -59,14 +59,14 @@ How to track progress: each step below the current one is wrapped in its own `<!
 
 ### 💾 Data Management
 
-- [x] 34. [Add Meal Form](https://github.com/shahriarabiddut/macrozone-react-native-app#34-add-meal-form) ← **Start** ← **End**
-- [ ] 35. AsyncStorage ← **next**
-- [ ] 36. Quick AsyncStorage Example (don't add to project)
-- [ ] 37. Storage Handler
-- [ ] 38. Update Add Meal Form To Use Storage Handler
-- [ ] 39. Get Meals From Storage
-- [ ] 40. Update Recent Meals To Use Storage Handler
-- [ ] 41. Update Macro Grid To Calculate Totals
+- [x] 34. [Add Meal Form](https://github.com/shahriarabiddut/macrozone-react-native-app#34-add-meal-form)
+- [x] 35. [AsyncStorage](https://github.com/shahriarabiddut/macrozone-react-native-app#35-asyncstorage) ← **Start**
+- [x] 36. [Quick AsyncStorage Example (don't add to project)](https://github.com/shahriarabiddut/macrozone-react-native-app#36-quick-asyncstorage-example-dont-add-to-project)
+- [x] 37. [Storage Handler](https://github.com/shahriarabiddut/macrozone-react-native-app#37-storage-handler)
+- [x] 38. [Update Add Meal Form To Use Storage Handler](https://github.com/shahriarabiddut/macrozone-react-native-app#38-update-add-meal-form-to-use-storage-handler)
+- [x] 39. [Get Meals From Storage](https://github.com/shahriarabiddut/macrozone-react-native-app#39-get-meals-from-storage)
+- [x] 40. [Update Recent Meals To Use Storage Handler](https://github.com/shahriarabiddut/macrozone-react-native-app#40-update-recent-meals-to-use-storage-handler) ← **End**
+- [ ] 41. Update Macro Grid To Calculate Totals ← **next**
 - [ ] 42. Delete Meal Functionality
 - [ ] 43. Update Meal Item To Delete Meals
 - [ ] 44. Update Recent Meals To Pass Delete Callback
@@ -1036,9 +1036,6 @@ const styles = StyleSheet.create({
 
 Fill out the form and submit and you will see the values logged in the console.
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 35. AsyncStorage
 
 When you build a mobile app, you often need to store data. This may be through an API or locally on the device. For local storage in React Native, a common solution is to use `AsyncStorage`, which is a simple key-value storage system that allows you to persist data across app launches.
@@ -1048,9 +1045,7 @@ Install the package using the following command:
 ```bash
 npx expo install @react-native-async-storage/async-storage
 ```
--->
 
-<!--
 ## 36. Quick AsyncStorage Example (Don't add to project)
 
 Here is a quick example of how to use `AsyncStorage`:
@@ -1080,9 +1075,7 @@ const getData = async (key: string) => {
 ```
 
 As you can see, it is very similar to using `localStorage` in a web app, but with async/await syntax since it is asynchronous. You can use these functions to save and retrieve meals and macros in your app.
--->
 
-<!--
 ## 37. Storage Handler
 
 Let's create a simple storage handler that we can use to save and retrieve meals from `AsyncStorage`. Create a file at `src/storage/meals.ts` and add the following code:
@@ -1122,9 +1115,7 @@ export const addMeal = async (
 ```
 
 This code defines a `Meal` type and two functions: `getMeals` to retrieve the list of meals from storage, and `addMeal` to add a new meal to the storage. The meals are stored as an array in `AsyncStorage` under the key `meals`. Each meal has a unique ID generated from the current timestamp and a `createdAt` timestamp.
--->
 
-<!--
 ## 38. Update Add Meal Form To Use Storage Handler
 
 Now let's update the add meal form to use the `addMeal` function from our storage handler to save meals to `AsyncStorage`. Open `src/app/(tabs)/add-meal.tsx` and update to the following:
@@ -1270,9 +1261,7 @@ npx expo start -c
 ```
 
 Submit and you should see a success alert and then be redirected back to the home screen. The meal will be saved in `AsyncStorage`. Right now you can not see it on the home screen but in the next steps, we will update the home screen to display the meals from storage.
--->
 
-<!--
 ## 39. Get Meals From Storage
 
 Open `src/app/(tabs)/index.tsx`, import the `getMeals` function from the storage handler and use it to retrieve the meals from storage. Update the file to the following:
@@ -1316,9 +1305,7 @@ export default function HomeScreen() {
 You will not see anything change in the UI yet because we haven't updated the `RecentMeals` component, but if you check the console logs, you should see the loaded meals being logged whenever you navigate back to the home screen or reload the app.
 
 We use the `useFocusEffect` hook from `expo-router` to load the meals whenever the home screen comes into focus. This ensures that we always have the latest meals from storage whenever we view the home screen. If we use a regular `useEffect` with an empty dependency array, it would only load the meals once when the component mounts and would not update when we add new meals and navigate back to the home screen.
--->
 
-<!--
 ## 40. Update Recent Meals To Use Storage Handler
 
 Now we need to show the meals from storage in the recent meals section on the home screen. Let's pass in the meals as a prop to the `RecentMeals` component. Open `src/app/(tabs)/index.tsx` and update the `RecentMeals` component to the following:
@@ -1363,7 +1350,8 @@ export default function RecentMeals({ meals }: RecentMealsProps) {
   );
 }
 ```
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 41. Update Macro Grid To Calculate Totals
