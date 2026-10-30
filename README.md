@@ -28,31 +28,31 @@ How to track progress: each step below the current one is wrapped in its own `<!
 - [x] 9. [Checking The Platform](#9-checking-the-platform)
 - [x] 10. [Checking The Device Information](#10-checking-the-device-information)
 - [x] 11. [Inline Styling](#11-inline-styling)
-- [x] 12. StyleSheet API
-- [x] 13. Changing Header Text
-- [x] 14. Remove The Header
-- [x] 15. Global Styles
+- [x] 12. [StyleSheet API](https://github.com/shahriarabiddut/macrozone-react-native-app#12-stylesheet-api)
+- [x] 13. [Changing Header Text](https://github.com/shahriarabiddut/macrozone-react-native-app#13-changing-header-text)
+- [x] 14. [Remove The Header](https://github.com/shahriarabiddut/macrozone-react-native-app#14-remove-the-header)
+- [x] 15. [Global Styles](https://github.com/shahriarabiddut/macrozone-react-native-app#15-global-styles)
 
 ### 🗺️ Navigation & Layout
 
-- [x] 16. Update Home Screen with Global Styles
-- [x] 17. Home Header With Date
-- [x] 18. Update Home Screen With Header
-- [x] 19. Meal List Screen
-- [x] 20. Add Screen to Stack
-- [x] 21. Navigating Screens & Links
-- [x] 22. Adding A Header To The Meals Screen
-- [x] 23. Add Meals Screen
-- [x] 24. Add Link To Add Meal Screen
-- [x] 25. Tabs
+- [x] 16. [Update Home Screen with Global Styles](https://github.com/shahriarabiddut/macrozone-react-native-app#16-update-home-screen-with-global-styles)
+- [x] 17. [Home Header With Date](https://github.com/shahriarabiddut/macrozone-react-native-app#17-home-header-with-date)
+- [x] 18. [Update Home Screen With Header](https://github.com/shahriarabiddut/macrozone-react-native-app#18-update-home-screen-with-header)
+- [x] 19. [Meal List Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#19-meal-list-screen)
+- [x] 20. [Add Screen to Stack](https://github.com/shahriarabiddut/macrozone-react-native-app#20-add-screen-to-stack)
+- [x] 21. [Navigating Screens & Links](https://github.com/shahriarabiddut/macrozone-react-native-app#21-navigating-screens--links)
+- [x] 22. [Adding A Header To The Meals Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#22-adding-a-header-to-the-meals-screen)
+- [x] 23. [Add Meals Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#23-add-meals-screen)
+- [x] 24. [Add Link To Add Meal Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#24-add-link-to-add-meal-screen)
+- [x] 25. [Tabs](https://github.com/shahriarabiddut/macrozone-react-native-app#25-tabs)
 
 ### 🧩 UI Components
 
-- [x] 26. Create The Tab Layout
-- [x] 27. Update The Root Layout
-- [x] 28. Macro Card Component ← **Start**
-- [x] 29. Macro Grid Component
-- [x] 30. Add Macro Grid To Home Screen ← **End**
+- [x] 26. [Create The Tab Layout](https://github.com/shahriarabiddut/macrozone-react-native-app#26-create-the-tab-layout)
+- [x] 27. [Update The Root Layout](https://github.com/shahriarabiddut/macrozone-react-native-app#27-update-the-root-layout)
+- [x] 28. [Macro Card Component](https://github.com/shahriarabiddut/macrozone-react-native-app#28-macro-card-component) ← **Start**
+- [x] 29. [Macro Grid Component](https://github.com/shahriarabiddut/macrozone-react-native-app#29-macro-grid-component)
+- [x] 30. [Add Macro Grid To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#30-add-macro-grid-to-home-screen) ← **End**
 - [ ] 31. Meal Item Component ← **next**
 - [ ] 32. Recent Meals Component
 - [ ] 33. Add Recent Meals To Home Screen
