@@ -53,14 +53,14 @@ How to track progress: each step below the current one is wrapped in its own `<!
 - [x] 28. [Macro Card Component](https://github.com/shahriarabiddut/macrozone-react-native-app#28-macro-card-component)
 - [x] 29. [Macro Grid Component](https://github.com/shahriarabiddut/macrozone-react-native-app#29-macro-grid-component)
 - [x] 30. [Add Macro Grid To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#30-add-macro-grid-to-home-screen)
-- [x] 31. [Meal Item Component](https://github.com/shahriarabiddut/macrozone-react-native-app#31-meal-item-component) ← **Start**
+- [x] 31. [Meal Item Component](https://github.com/shahriarabiddut/macrozone-react-native-app#31-meal-item-component)
 - [x] 32. [Recent Meals Component](https://github.com/shahriarabiddut/macrozone-react-native-app#32-recent-meals-component)
-- [x] 33. [Add Recent Meals To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#33-add-recent-meals-to-home-screen) ← **End**
+- [x] 33. [Add Recent Meals To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#33-add-recent-meals-to-home-screen)
 
 ### 💾 Data Management
 
-- [ ] 34. Add Meal Form ← **next**
-- [ ] 35. AsyncStorage
+- [x] 34. [Add Meal Form](https://github.com/shahriarabiddut/macrozone-react-native-app#34-add-meal-form) ← **Start** ← **End**
+- [ ] 35. AsyncStorage ← **next**
 - [ ] 36. Quick AsyncStorage Example (don't add to project)
 - [ ] 37. Storage Handler
 - [ ] 38. Update Add Meal Form To Use Storage Handler
@@ -922,9 +922,6 @@ export default function HomeScreen() {
 
 You should now see the recent meals section below the macro grid on the home screen.
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 34. Add Meal Form
 
 Create a form for adding meals on the add meal screen. Open `src/app/(tabs)/add-meal.tsx` and update to the following:
@@ -1038,7 +1035,8 @@ const styles = StyleSheet.create({
 ```
 
 Fill out the form and submit and you will see the values logged in the console.
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 35. AsyncStorage
