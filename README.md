@@ -50,16 +50,16 @@ How to track progress: each step below the current one is wrapped in its own `<!
 
 - [x] 26. [Create The Tab Layout](https://github.com/shahriarabiddut/macrozone-react-native-app#26-create-the-tab-layout)
 - [x] 27. [Update The Root Layout](https://github.com/shahriarabiddut/macrozone-react-native-app#27-update-the-root-layout)
-- [x] 28. [Macro Card Component](https://github.com/shahriarabiddut/macrozone-react-native-app#28-macro-card-component) ← **Start**
+- [x] 28. [Macro Card Component](https://github.com/shahriarabiddut/macrozone-react-native-app#28-macro-card-component)
 - [x] 29. [Macro Grid Component](https://github.com/shahriarabiddut/macrozone-react-native-app#29-macro-grid-component)
-- [x] 30. [Add Macro Grid To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#30-add-macro-grid-to-home-screen) ← **End**
-- [ ] 31. Meal Item Component ← **next**
-- [ ] 32. Recent Meals Component
-- [ ] 33. Add Recent Meals To Home Screen
+- [x] 30. [Add Macro Grid To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#30-add-macro-grid-to-home-screen)
+- [x] 31. [Meal Item Component](https://github.com/shahriarabiddut/macrozone-react-native-app#31-meal-item-component) ← **Start**
+- [x] 32. [Recent Meals Component](https://github.com/shahriarabiddut/macrozone-react-native-app#32-recent-meals-component)
+- [x] 33. [Add Recent Meals To Home Screen](https://github.com/shahriarabiddut/macrozone-react-native-app#33-add-recent-meals-to-home-screen) ← **End**
 
 ### 💾 Data Management
 
-- [ ] 34. Add Meal Form
+- [ ] 34. Add Meal Form ← **next**
 - [ ] 35. AsyncStorage
 - [ ] 36. Quick AsyncStorage Example (don't add to project)
 - [ ] 37. Storage Handler
@@ -804,9 +804,6 @@ export default function HomeScreen() {
 
 Now you should see the 2x2 grid of macro cards on the home screen.
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 31. Meal Item Component
 
 Let's also create a component for displaying recent meals on the home screen. Let's start with the meal item component that will be displayed from the recent meals list. Create `src/components/MealItem.tsx` and add the following code:
@@ -860,9 +857,7 @@ const styles = StyleSheet.create({
 ```
 
 This component takes in the meal name and its macros and displays them in a styled container.
--->
 
-<!--
 ## 32. Recent Meals Component
 
 Now create a component that will display a list of recent meals. Create `src/components/RecentMeals.tsx` and add the following code:
@@ -901,9 +896,7 @@ export default function RecentMeals() {
   );
 }
 ```
--->
 
-<!--
 ## 33. Add Recent Meals To Home Screen
 
 Finally, let's add the `RecentMeals` component to the home screen below the macro grid. Open `src/app/(tabs)/index.tsx` and update to the following:
@@ -928,7 +921,8 @@ export default function HomeScreen() {
 ```
 
 You should now see the recent meals section below the macro grid on the home screen.
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 34. Add Meal Form
