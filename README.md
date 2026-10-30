@@ -27,33 +27,33 @@ How to track progress: each step below the current one is wrapped in its own `<!
 - [x] 8. [Basic Home Screen](#8-basic-home-screen)
 - [x] 9. [Checking The Platform](#9-checking-the-platform)
 - [x] 10. [Checking The Device Information](#10-checking-the-device-information)
-- [ ] 11. [Inline Styling](#11-inline-styling) ← **current**
-- [ ] 12. StyleSheet API
-- [ ] 13. Changing Header Text
-- [ ] 14. Remove The Header
-- [ ] 15. Global Styles
+- [x] 11. [Inline Styling](#11-inline-styling)
+- [x] 12. StyleSheet API
+- [x] 13. Changing Header Text
+- [x] 14. Remove The Header
+- [x] 15. Global Styles
 
 ### 🗺️ Navigation & Layout
 
-- [ ] 16. Update Home Screen with Global Styles
-- [ ] 17. Home Header With Date
-- [ ] 18. Update Home Screen With Header
-- [ ] 19. Meal List Screen
-- [ ] 20. Add Screen to Stack
-- [ ] 21. Navigating Screens & Links
-- [ ] 22. Adding A Header To The Meals Screen
-- [ ] 23. Add Meals Screen
-- [ ] 24. Add Link To Add Meal Screen
-- [ ] 25. Tabs
+- [x] 16. Update Home Screen with Global Styles
+- [x] 17. Home Header With Date
+- [x] 18. Update Home Screen With Header
+- [x] 19. Meal List Screen
+- [x] 20. Add Screen to Stack
+- [x] 21. Navigating Screens & Links
+- [x] 22. Adding A Header To The Meals Screen
+- [x] 23. Add Meals Screen
+- [x] 24. Add Link To Add Meal Screen
+- [x] 25. Tabs
 
 ### 🧩 UI Components
 
-- [ ] 26. Create The Tab Layout
-- [ ] 27. Update The Root Layout
-- [ ] 28. Macro Card Component
-- [ ] 29. Macro Grid Component
-- [ ] 30. Add Macro Grid To Home Screen
-- [ ] 31. Meal Item Component
+- [x] 26. Create The Tab Layout
+- [x] 27. Update The Root Layout
+- [x] 28. Macro Card Component ← **Start**
+- [x] 29. Macro Grid Component
+- [x] 30. Add Macro Grid To Home Screen ← **End**
+- [ ] 31. Meal Item Component ← **next**
 - [ ] 32. Recent Meals Component
 - [ ] 33. Add Recent Meals To Home Screen
 
@@ -625,9 +625,9 @@ Move the following into the new `src/app/(tabs)` folder:
 We also need to create a new layout file for the tabs. Create a new file at `src/app/(tabs)/_layout.tsx` and add the following code:
 
 ```tsx
-import { colors } from '@/styles/global';
-import { Ionicons } from '@expo/vector-icons';
-import { Tabs } from 'expo-router';
+import { colors } from "@/styles/global";
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
 
 export default function TabLayout() {
   return (
@@ -643,29 +643,29 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name='index'
+        name="index"
         options={{
-          title: 'Home',
+          title: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name='home' size={size} color={color} />
+            <Ionicons name="home" size={size} color={color as string} />
           ),
         }}
       />
       <Tabs.Screen
-        name='add-meal'
+        name="add-meal"
         options={{
-          title: 'Add Meal',
+          title: "Add Meal",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name='add-circle' size={size} color={color} />
+            <Ionicons name="add-circle" size={size} color={color as string} />
           ),
         }}
       />
       <Tabs.Screen
-        name='meals'
+        name="meals"
         options={{
-          title: 'All Meals',
+          title: "All Meals",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name='list' size={size} color={color} />
+            <Ionicons name="list" size={size} color={color as string} />
           ),
         }}
       />
@@ -694,9 +694,6 @@ export default function RootLayout() {
 
 This tells the root layout to render the tab layout, which in turn renders the individual screens as tabs. We no longer need the top bar with the back button, so we set `headerShown` to `false` in the stack screen options.
 
-<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
-
-<!--
 ## 28. Macro Card Component
 
 Let's create a reusable component for displaying the macros in a card format. Create a new file at `src/components/MacroCard.tsx` and add the following code:
@@ -753,9 +750,7 @@ const styles = StyleSheet.create({
 ```
 
 This component takes in a label (e.g. "Protein"), a value (e.g. "120g"), a goal (e.g. "150g"), and a color for the left border of the card. It displays the information in a styled card format.
--->
 
-<!--
 ## 29. Macro Grid Component
 
 Now let's create a component that uses the `MacroCard` component to display a grid of macros. Create a new file at `src/components/MacroGrid.tsx` and add the following code:
@@ -785,32 +780,31 @@ const styles = StyleSheet.create({
 ```
 
 Right now the values are hardcoded but in a bit, we will make them dynamic based on the meals that we add. The `MacroGrid` component arranges the `MacroCard` components in a 2x2 grid using flexbox.
--->
 
-<!--
 ## 30. Add Macro Grid To Home Screen
 
 Finally, let's add the `MacroGrid` component to the home screen. Open `src/app/(tabs)/index.tsx` and update to the following:
 
 ```tsx
-import { globalStyles } from '@/styles/global';
-import { Text, View } from 'react-native';
-import HomeHeader from '@/components/HomeHeader';
-import MacroGrid from '@/components/MacroGrid';
+import HomeHeader from "@/components/HomeHeader";
+import MacroGrid from "@/components/MacroGrid";
+import { globalStyles } from "@/styles/global";
+import { ScrollView, Text } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View style={globalStyles.container}>
+    <ScrollView style={globalStyles.container}>
       <Text style={globalStyles.title}>MacroZone</Text>
       <HomeHeader />
       <MacroGrid />
-    </View>
+    </ScrollView>
   );
 }
 ```
 
 Now you should see the 2x2 grid of macro cards on the home screen.
--->
+
+<!-- ============================ NEXT STEPS (COMMENTED OUT) ============================ -->
 
 <!--
 ## 31. Meal Item Component
